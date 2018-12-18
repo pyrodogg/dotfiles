@@ -1,0 +1,29 @@
+
+#opacity
+fading = true; # Fade windows during opacity changes.
+inactive-opacity = 0.8;
+active-opacity = 0.9;
+opacity-rule = [
+    "99:class_g = 'Firefox'",
+    "99:class_g = 'eom'",
+    "99:class_g = 'Google-chrome' && (fullscreen || focused)",
+    "85:class_g = 'Rofi'",
+    "0:_NET_WM_STATE@[0]:32a *= '_NET_WM_STATE_HIDDEN'",
+    "99:class_g = 'feh'"
+];
+
+#shadow
+shadow = true;
+no-dnd-shadow = true;
+no-dock-shadow = true;
+clear-shadow = true;
+shadow-radius = 7;
+shadow-offset-x = -7;
+shadow-offset-y = -7;
+shadow-exclude-list = [
+    "name = 'Notification'",
+    "class_g = 'Conky'",
+    "class_g ?= 'Notify-osd'",
+    "class_g = 'Cairo-clock'",
+    "_NET_WM_STATE@:32a *= '_NET_WM_STATE_HIDDEN'"
+];
