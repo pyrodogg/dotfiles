@@ -101,6 +101,8 @@ ranger() {
 	fi
 }
 
+[[ -f ~/.zshrc.secrets ]] &&  source ~/.zshrc.secrets
+
 # Example aliases
   alias zshconfig="vim ~/.zshrc"
   alias ohmyzsh="vim ~/.oh-my-zsh"
