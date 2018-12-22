@@ -199,4 +199,4 @@ exec_always --no-startup-id ~/.config/compton/launch.sh
 
 exec_always --no-startup-id ~/.config/polybar/launch.sh
 
-exec_always urxvt -q -o -f &
+exec_always --no-startup-id urxvtd -q -o -f
