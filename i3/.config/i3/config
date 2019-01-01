@@ -191,6 +191,9 @@ hide_edge_borders smart
 #Apps
 
 exec_always --no-startup-id xrdb -merge ~/.Xresources
+
+exec_always --no-startup-id ~/.config/dunst/launch.sh
+
 # https://unsplash.com/photos/h4xoZAs5XyM
 exec feh --bg-fill ~/Pictures/wallpaper/aliaksei-lepik-1224087-unsplash.jpg 
 
