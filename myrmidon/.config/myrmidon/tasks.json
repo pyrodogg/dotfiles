@@ -1,0 +1,29 @@
+[
+  {
+    "name": "Power off",
+    "confirm": true,
+    "command": "systemctl poweroff"
+  },
+  {
+    "name": "Reboot",
+    "confirm": true,
+    "command": "systemctl reboot"
+  },
+  {
+    "name": "Suspend",
+    "confirm": true,
+    "command": "systemctl suspend"
+  },
+  {
+    "name": "Lock",
+    "command": "i3lock -c 002b36 -e -n"
+  },
+  {
+    "name": "VPN Up",
+    "command": "source ~/.zshrc.secrets && nmcli con up $QUICK_VPN"
+  },
+  {
+    "name": "VPN Down",
+    "command": "source ~/.zshrc.secrets && nmcli con down $QUICK_VPN"
+  } 
+]

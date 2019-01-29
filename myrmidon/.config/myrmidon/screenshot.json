@@ -1,0 +1,10 @@
+[
+  {
+    "name": "Area screenshot",
+    "command": "gnome-screenshot -a"
+  },
+  {
+    "name": "Window screenshot",
+    "command": "gnome-screenshot -w"
+  }
+]
