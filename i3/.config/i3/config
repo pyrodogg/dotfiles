@@ -219,6 +219,7 @@ exec_always --no-startup-id xrdb -merge ~/.Xresources
 exec_always --no-startup-id ~/.config/dunst/launch.sh
 
 exec --no-startup-id libinput-gestures &
+exec --no-startup-id nm-applet
 
 # https://unsplash.com/photos/h4xoZAs5XyM
 exec feh --bg-fill ~/Pictures/wallpaper/aliaksei-lepik-1224087-unsplash.jpg 
