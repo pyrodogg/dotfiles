@@ -1,0 +1,61 @@
+#!/bin/bash
+# Helper script for editing split .zshrc configuration
+# Synctax: `zrc alias` open alias.zshrc file
+
+
+function print_usage {
+  echo "Usage: zrc [-h] [up | segment_alias]"
+  exit 0
+
+}
+
+if [[ -z "${XDG_CONFIG_HOME}" ]]; then
+  config_dir="$HOME/.config/zsh/"
+else
+  config_dir="${XDG_CONFIG_HOME}/zsh"
+fi
+
+#Parse parameters
+POSITIONAL=()
+while [[ $# -gt 0 ]]
+do
+key="$1"
+
+case $key in
+  -h|--help)
+  print_usage
+  ;;
+  *) # unknown options
+  POSITIONAL+=("$1")
+  shift
+  ;;
+esac
+done
+set -- "${POSITIONAL[@]}"
+
+segment="${1}"
+
+if [[ -z "${segment}" ]]; then 
+  print_usage
+fi
+
+if [[ $segment == "up" ]]; then
+  source ${HOME}/.zshrc
+  # Throws erros where manually calling same code in shell does not.
+  exit 0
+fi
+
+# Find config file matching segment name
+# for config in ~/.config/zsh/*.zsh; do echo $config ; done
+
+config=`ls ~/.config/zsh/*$segment*.zsh`
+
+if [[ -z "${config}" ]]; then
+  echo "Unknown .zsh config file: ${segment}"
+  exit 1
+fi
+
+${EDITOR} ${config}
+
+
+
