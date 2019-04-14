@@ -2,6 +2,8 @@
 " Solarized vim colors https://bbs.archlinux.org/viewtopic.php?id=164108"
 set nocompatible
 set t_Co=16
+set encoding=UTF-8
+set guifont=SauceCodePro\ Nerd\ Font\ Mono\ 10
 call pathogen#infect()
 syntax on
 
