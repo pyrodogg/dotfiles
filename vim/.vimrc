@@ -25,3 +25,5 @@ call togglebg#map("<F5>")
 :imap jj <ESC>
 :set mouse=a
 "set ttymouse=xterm2"
+
+map <C-n> :NERDTreeToggle<CR>
