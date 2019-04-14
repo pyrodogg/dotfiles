@@ -223,7 +223,8 @@ exec --no-startup-id libinput-gestures &
 exec --no-startup-id nm-applet
 
 # https://unsplash.com/photos/h4xoZAs5XyM
-exec feh --bg-fill ~/Pictures/wallpaper/aliaksei-lepik-1224087-unsplash.jpg 
+#exec feh --bg-fill ~/Pictures/wallpaper/aliaksei-lepik-1224087-unsplash.jpg 
+exec feh --bg-fill ~/Pictures/wallpaper/_MG_0158.jpg 
 
 #exec compton --no-fading-openclose --config ~/.config/compton.conf -b --logpath /tmp/compton
 exec_always --no-startup-id ~/.config/compton/launch.sh
