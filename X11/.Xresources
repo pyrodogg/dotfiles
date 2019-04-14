@@ -57,6 +57,7 @@
 
 URxvt.intensityStyles: false
 !!URxvt.perl-ext-common: vtwheel
+URxvt.perl-ext-common: unichr,resize-font
 
 !! Transparency (0-255):
 !!*.alpha: 230
@@ -68,5 +69,11 @@ URxvt.intensityStyles: false
 *.boldFont:xft:SauceCodePro Nerd Font Mono:style=Bold:size=10
 
 URxvt*scrollBar: false
+
+URxvt.scrollBar: false
+URxvt.keysym.C-Up:	resize-font:bigger
+URxvt.keysym.C-Down:	resize-font:smaller
+URxvt.keysym.C-equal:	resize-font:reset
+URxvt.keysym.C-slash: 	resize-font:show
 
 xterm*termName: xterm-256color
