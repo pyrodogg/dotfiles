@@ -4,6 +4,11 @@ set nocompatible
 set t_Co=16
 call pathogen#infect()
 syntax on
+
+set ts=2
+set sts=2
+set et "expand tabs to spaces
+
 set background=dark " dark | light "
 colorscheme solarized
 
