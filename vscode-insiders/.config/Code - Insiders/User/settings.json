@@ -1,0 +1,23 @@
+{
+
+  "window.zoomLevel": 0,
+  "bracketPairColorizer.showBracketsInGutter": true,
+  "todohighlight.isEnable": true,
+  "gitlens.advanced.messages": {
+    "suppressShowKeyBindingsNotice": true
+  },
+  "gitlens.codeLens.enabled": false,
+  "gitlens.currentLine.enabled": false,
+  "gitlens.hovers.currentLine.over": "line",
+  "sync.gist": "eb9ac84849dacff3985a55a715554043",
+  "editor.fontFamily": "'Fira Code', 'Droid Sans Mono', 'monospace', monospace, 'Droid Sans Fallback'",
+  "editor.fontLigatures": true,
+  "workbench.editor.highlightModifiedTabs": true,
+  "markdownlint.config": {
+    "MD013": false,
+    "MD026": false,
+  },
+  "workbench.iconTheme": "material-icon-theme",
+  "vetur.format.defaultFormatter.ts": "vscode-typescript",
+  "terminal.integrated.fontFamily": "SauceCodePro Nerd Font Mono"
+}
