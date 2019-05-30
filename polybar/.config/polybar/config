@@ -533,5 +533,6 @@ type = custom/script
 exec = ~/.config/polybar/isrunning-compton.sh
 interval = 5
 click-left = ~/.config/polybar/isrunning-compton.sh --toggle
+format-underline = #666
 
 ; vim:ft=dosini
