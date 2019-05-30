@@ -376,14 +376,18 @@ label = %date% %time%
 type = internal/pulseaudio
 
 #format-volume = <label-volume> <bar-volume>
+format-volume-prefix = "ﰝ "
+format-volume-prefix-foreground = ${colors.foreground-alt}
 format-volume = <label-volume>
-label-volume = VOL %percentage%%
+label-volume = %percentage%%
 label-volume-foreground = ${root.foreground}
+format-volume-underline = #6c71c4
 
 use-ui-max=false
 
-label-muted = 🔇 muted
+label-muted = 遼 00% 
 label-muted-foreground = #666
+format-muted-underline = #666
 
 bar-volume-width = 10
 bar-volume-foreground-0 = #55aa55
