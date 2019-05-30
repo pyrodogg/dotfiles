@@ -492,7 +492,7 @@ type = custom/menu
 expand-right = false
 
 format-spacing = 1
-
+label-open-underline = ${colors.secondary}
 ;label-open = 
 label-open = ⏻
 label-open-foreground = ${colors.secondary}
