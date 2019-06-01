@@ -22,10 +22,12 @@
   },
   {
     "name": "VPN Up",
-    "command": "source ~/.zshrc.secrets && nmcli con up $QUICK_VPN"
+    "oldcommand": "source ~/.zshrc.secrets && nmcli con up $QUICK_VPN",
+    "command": "source ~/.zshrc.secrets && nordvpn c $QUICK_VPN"
   },
   {
     "name": "VPN Down",
-    "command": "source ~/.zshrc.secrets && nmcli con down $QUICK_VPN"
-  } 
+    "oldcommand": "source ~/.zshrc.secrets && nmcli con down $QUICK_VPN",
+    "command": "source ~/.zshrc.secrets && nordvpn d"
+  },
 ]
