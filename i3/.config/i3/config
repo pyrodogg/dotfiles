@@ -179,6 +179,8 @@ bindsym XF86MonBrightnessDown exec --no-startup-id sudo light -U 10%
 
 
 # App specific workspace config
+
+for_window [urgent=latest] focus
 for_window [class="Nautilus"] floating enable resize set 1024 640, move position center
 for_window [class="feh"] floating enable resize set 1024 640, move position center
 
