@@ -76,6 +76,7 @@ URxvt.perl-ext-common: unichr,resize-font
 *.font: termfont
 *.boldFont: termBoldFont
 URxvt*boldFont:
+emacs.font:Monospace 12
 
 URxvt.letterSpace: 0
 URxvt.lineSpace:0
