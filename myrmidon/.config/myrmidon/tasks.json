@@ -16,7 +16,9 @@
   },
   {
     "name": "Lock",
-    "command": "i3lock -c 002b36 -e -n"
+    "bommand1": "i3lock -c 002b36 -e -n",
+    "bommand2": "i3lock -e -n -i ~/Pictures/wallpaper/_MG_0158.jpg",
+    "command": "cd ~/.local/bin; lock.sh &"
   },
   {
     "name": "VPN Up",
