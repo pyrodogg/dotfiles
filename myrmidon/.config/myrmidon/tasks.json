@@ -30,4 +30,16 @@
     "oldcommand": "source ~/.zshrc.secrets && nmcli con down $QUICK_VPN",
     "command": "source ~/.zshrc.secrets && nordvpn d"
   },
+  {
+    "name": "Screeps Server",
+    "command": "cd ~/.config/i3/layout; screeps_server"
+  }, 
+  {
+    "name": "Gnome Settings",
+    "command": "export XDG_CURRENT_DESKTOP=GNOME; gnome-control-center &"
+  },
+  {
+    "name": "Layout Manager",
+    "command": "layout_manager.sh"
+  }
 ]
