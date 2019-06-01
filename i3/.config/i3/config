@@ -236,5 +236,6 @@ exec_always --no-startup-id ~/.config/polybar/launch.sh
 exec_always --no-startup-id urxvtd -q -o -f
 exec --no-startup-id xautolock -time 5 -locker "~/.local/bin/lock.sh" -detectsleep -corners +-00 -cornerdelay 5 &
 
-exec_always 'setxkbmap -layout "us,us" -variant ",altgr-intl"'
-exec_always 'setxkbmap -option "grp:alt_shit_toggle"'
+#exec_always --no-startup-id urxvtd -q -o -f
+
+exec_always --no-startup-id "setxkbmap -layout 'us,us' -variant ',altgr-intl' -option 'grp:alt_shit_toggle'"
