@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/usr/bin/zsh
 # Helper script for editing split .zshrc configuration
 # Synctax: `zrc alias` open alias.zshrc file
 
@@ -48,7 +48,8 @@ fi
 # Find config file matching segment name
 # for config in ~/.config/zsh/*.zsh; do echo $config ; done
 
-config=`ls ~/.config/zsh/*$segment*.zsh`
+#config=`ls ~/.config/zsh/*$segment*.zsh`
+config=`ls ~/.config/zsh/*$segment`
 
 if [[ -z "${config}" ]]; then
   echo "Unknown .zsh config file: ${segment}"

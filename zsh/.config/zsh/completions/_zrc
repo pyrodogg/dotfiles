@@ -1,0 +1,8 @@
+#compdef _zrc zrc
+
+_zrc(){
+
+  # List all of the *.zsh shards as completion options
+  _path_files -W ~/.config/zsh -g "*.zsh" -F "completions*"
+
+}
