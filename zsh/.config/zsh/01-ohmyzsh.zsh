@@ -57,6 +57,8 @@ DEFAULT_USER="skyler"
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git sublime)
+fpath=("$HOME/.config/zsh/completions" $fpath)
+plugins=(git sublime zsh-completions)
+autoload -U compinit && compinit
 
 source $ZSH/oh-my-zsh.sh

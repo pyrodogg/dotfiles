@@ -22,3 +22,5 @@ fi
 # else
 #   export EDITOR='mvim'
 # fi
+
+export XDG_CONFIG_HOME=${HOME}/.config/
