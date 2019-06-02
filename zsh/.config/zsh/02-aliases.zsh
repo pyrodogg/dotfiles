@@ -13,7 +13,21 @@ alias t="tmux"
 alias up="cd .."
 alias xup="xrdb ~/.Xresources"
 alias zshrc="vim ~/.zshrc"
+alias files="nautilus > /dev/null 2>&1 &"
 
+reload(){
+  source ~/.zshrc
+}
+
+cowcat()
+{
+  cowsay $1 | lolcat
+}
+
+figcat()
+{
+  figlet $1 | lolcat
+}
 
 wttr()
 {
@@ -30,3 +44,10 @@ ranger() {
 		exit
 	fi
 }
+
+c() {
+  cd $1;
+  ls;
+}
+# Alias must be set after function
+alias cd="c"
