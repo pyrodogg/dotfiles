@@ -13,6 +13,8 @@ set et "expand tabs to spaces
 
 set background=dark " dark | light "
 colorscheme solarized
+let g:airline_theme='solarized'
+let g:airline_powerline_fonts = 1
 
 filetype plugin on
 
@@ -27,3 +29,4 @@ call togglebg#map("<F5>")
 "set ttymouse=xterm2"
 
 map <C-n> :NERDTreeToggle<CR>
+
