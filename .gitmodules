@@ -19,3 +19,18 @@
 [submodule "vim/.vim/bundle/vim-airline-themes"]
 	path = vim/.vim/bundle/vim-airline-themes
 	url = https://github.com/vim-airline/vim-airline-themes
+[submodule "vim/.vim/bundle/vim-devicons"]
+	path = vim/.vim/bundle/vim-devicons
+	url = https://github.com/ryanoasis/vim-devicons
+[submodule "vim/.vim/bundle/vim-markdown"]
+	path = vim/.vim/bundle/vim-markdown
+	url = https://github.com/plasticboy/vim-markdown.git
+[submodule "vim/.vim/bundle/vim-signify"]
+	path = vim/.vim/bundle/vim-signify
+	url = https://github.com/mhinz/vim-signify.git
+[submodule "vim/.vim/bundle/vim-toml"]
+	path = vim/.vim/bundle/vim-toml
+	url = https://github.com/cespare/vim-toml.git
+[submodule "vim/.vim/bundle/vimwiki"]
+	path = vim/.vim/bundle/vimwiki
+	url = https://github.com/vimwiki/vimwiki.git
