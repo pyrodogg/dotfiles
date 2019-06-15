@@ -14,6 +14,8 @@ alias up="cd .."
 alias xup="xrdb ~/.Xresources"
 alias zshrc="vim ~/.zshrc"
 alias files="nautilus > /dev/null 2>&1 &"
+alias lmk="notify-send 'Something happened!'"
+
 
 reload(){
   source ~/.zshrc
