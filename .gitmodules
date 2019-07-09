@@ -40,3 +40,9 @@
 [submodule "tmux/.config/tmux/plugins/tpm"]
 	path = tmux/.config/tmux/plugins/tpm
 	url = https://github.com/tmux-plugins/tpm
+[submodule "vim/.vim/bundle/todo.txt-vim"]
+	path = vim/.vim/bundle/todo.txt-vim
+	url = https://github.com/dbeniamine/todo.txt-vim.git
+[submodule "vim/.vim/bundle/yats.vim"]
+	path = vim/.vim/bundle/yats.vim
+	url = https://github.com/HerringtonDarkholme/yats.vim.git
