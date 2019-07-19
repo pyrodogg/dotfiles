@@ -31,3 +31,10 @@ call togglebg#map("<F5>")
 
 map <C-n> :NERDTreeToggle<CR>
 
+" Split config
+set splitbelow
+set splitright
+nnoremap <C-J> <C-W><C-J>
+nnoremap <C-K> <C-W><C-K>
+nnoremap <C-L> <C-W><C-L>
+nnoremap <C-H> <C-w><C-H>
