@@ -2,7 +2,8 @@
 # it'll load a random theme each time that oh-my-zsh is loaded.
 # See https://github.com/robbyrussell/oh-my-zsh/wiki/Themes
 POWERLEVEL9K_MODE='nerdfont-complete'
-ZSH_THEME="powerlevel9k/powerlevel9k"
+#ZSH_THEME="powerlevel9k/powerlevel9k"
+ZSH_THEME="powerlevel10k/powerlevel10k"
 
 POWERLEVEL9K_LEFT_PROMPT_ELEMENTS=(context dir vcs)
 POWERLEVEL9K_RIGHT_PROMPT_ELEMENTS=(status history time)
@@ -12,6 +13,8 @@ if [[ $COLUMNS -lt 80 ]]; then
   POWERLEVEL9K_PROMPT_ON_NEWLINE=false
   POWERLEVEL9K_LEFT_PROMPT_ELEMENTS=(context dir newline vcs)
 fi
+
+POWERLEVEL9K_TIME_ICON=
 
 DEFAULT_USER="skyler"
 
