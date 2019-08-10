@@ -21,3 +21,7 @@ export VISUAL='nvim'
 
 export XDG_CONFIG_HOME=${HOME}/.config/
 export XDG_CACHE_HOME=${HOME}/.cache/
+
+# Hack to get man working
+# https://bugs.debian.org/cgi-bin/bugreport.cgi?bug=890355
+export MAN_DISABLE_SECCOMP=1
