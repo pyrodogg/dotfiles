@@ -10,11 +10,14 @@ alias code="code-insiders --disable-gpu"
 alias mkdir="mkdir -p"
 alias ohmyzsh="vim ~/.oh-my-zsh"
 alias t="tmux"
+alias unstow="stow -D"
 alias up="cd .."
+alias vim="nvim"
 alias xup="xrdb ~/.Xresources"
 alias zshrc="vim ~/.zshrc"
 alias files="nautilus > /dev/null 2>&1 &"
 alias lmk="notify-send 'Something happened!'"
+alias reddit="rtv"
 
 
 reload(){
