@@ -87,4 +87,11 @@ URxvt.keysym.C-Down:	resize-font:smaller
 URxvt.keysym.C-equal:	resize-font:reset
 URxvt.keysym.C-slash: 	resize-font:show
 
+rofi.terminal:  urxvt
+rofi.ssh-client:  ssh
+rofi.ssh-command: {terminal} -e {ssh-client} {host}
+rofi.sidebar-mode: true
+rofi.kb-mode-next: Shift+Right,Control+Tab,Super+d
+rofi.kb-mode-previous: Shift+Left,Control+ISO_Left_Tab,Super+D
+
 xterm*termName: xterm-256color
