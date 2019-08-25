@@ -4,21 +4,22 @@
 . /usr/share/autojump/autojump.sh
 
 
+alias calw="gcalcli calw --military --monday"
 alias cat="bat"
 alias chrome="google-chrome &"
 alias code="code-insiders --disable-gpu"
+alias files="nautilus > /dev/null 2>&1 &"
+alias gcli="gcalcli"
+alias lmk="notify-send 'Something happened!'"
 alias mkdir="mkdir -p"
 alias ohmyzsh="vim ~/.oh-my-zsh"
+alias reddit="rtv"
 alias t="tmux"
 alias unstow="stow -D"
 alias up="cd .."
 alias vim="nvim"
 alias xup="xrdb ~/.Xresources"
 alias zshrc="vim ~/.zshrc"
-alias files="nautilus > /dev/null 2>&1 &"
-alias lmk="notify-send 'Something happened!'"
-alias reddit="rtv"
-
 
 reload(){
   source ~/.zshrc
