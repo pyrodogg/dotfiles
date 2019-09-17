@@ -42,6 +42,7 @@ fi
 if [[ $segment == "up" ]]; then
   source ${HOME}/.zshrc
   # Throws erros where manually calling same code in shell does not.
+  echo 'zrc config updated'
   exit 0
 fi
 
