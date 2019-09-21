@@ -1,0 +1,3 @@
+{
+  "exec": "rofi -dmenu -matching fuzzy -i -p \"Search tasks\""
+}
