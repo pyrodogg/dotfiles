@@ -1,0 +1,11 @@
+#!/usr/bin/zsh
+
+i3-msg "workspace 3; append_layout ~/.config/i3/layout/layout_screeps_server.json";
+
+urxvt -name screeps-server -e zsh  -c "cd /srv/screeps; npx screeps start" &;
+
+sleep 1;
+
+urxvt -name screeps-cli -e zsh -c "cd /srv/screeps; npx screeps cli" &;
+
+urxvt -name screeps-multimeter -e zsh -c "cd /srv/screeps; multimeter" &;
