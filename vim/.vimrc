@@ -1,13 +1,14 @@
-
 " Solarized vim colors https://bbs.archlinux.org/viewtopic.php?id=164108"
 set nocompatible
 " set modelines=0
 " set nomodeline
-set t_Co=16
+syntax on
+set t_Co=16 
+set t_Co=256 " For correct coloring in gnome terminal
+let g:solarized_termcolors=256 " For correct coloring in gnome terminal
 set encoding=UTF-8
 set guifont=SauceCodePro\ Nerd\ Font\ Mono\ 10
 call pathogen#infect()
-syntax on
 
 set ts=2
 set sts=2
