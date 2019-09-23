@@ -168,7 +168,7 @@ bindsym XF86AudioRaiseVolume exec --no-startup-id amixer -q set Master 2db+ unmu
 bindsym XF86AudioLowerVolume exec --no-startup-id amixer -q set Master 2db- unmute
 bindsym XF86AudioMute exec --no-startup-id amixer -D pulse set Master 1+ toggle
 
-bindsym XF86AudioPlay exec --no-startup-id playerctl pay-pause
+bindsym XF86AudioPlay exec --no-startup-id playerctl play-pause
 bindsym XF86AudioStop exec --no-startup-id playerctl stop
 bindsym XF86AudioNext exec --no-startup-id playerctl next
 bindsym XF86AudioPrev exec --no-startup-id playerctl previous
@@ -177,10 +177,7 @@ bindsym XF86AudioPrev exec --no-startup-id playerctl previous
 bindsym XF86MonBrightnessUp exec --no-startup-id sudo light -A 10%
 bindsym XF86MonBrightnessDown exec --no-startup-id sudo light -U 10%
 
-
-
 # App specific workspace config
-
 for_window [urgent=latest] focus
 for_window [class="Nautilus"] floating enable resize set 1024 640, move position center
 for_window [class="feh"] floating enable resize set 1024 640, move position center
