@@ -216,6 +216,7 @@ exec feh --bg-fill ~/Pictures/wallpaper/_MG_0158.jpg
 exec_always --no-startup-id ~/.config/compton/launch.sh
 
 exec_always --no-startup-id ~/.config/polybar/launch.sh
+exec_always --no-startup-id ~/.config/redshift/launch.sh
 
 exec --no-startup-id xautolock -time 5 -locker "~/.local/bin/lock.sh" -detectsleep -corners +-00 -cornerdelay 5 &
 
