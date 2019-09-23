@@ -160,8 +160,8 @@ mode "resize" {
 bindsym $mod+r mode "resize"
 
 # Myrmidon
-bindsym $mod+p exec --no-startup-id "/opt/myrmidon/myrmidon.sh ~/.config/myrmidon/tasks.json"
-bindsym $mod+Print exec --no-startup-id /opt/myrmidon/myrmidon.sh ~/.config/myrmidon/screenshot.json
+bindsym $mod+p exec --no-startup-id "myrmidon.sh ~/.config/myrmidon/tasks.json"
+bindsym $mod+Print exec --no-startup-id "myrmidon.sh ~/.config/myrmidon/screenshot.json"
 
 # Pulse Audio controls
 bindsym XF86AudioRaiseVolume exec --no-startup-id amixer -q set Master 2db+ unmute
