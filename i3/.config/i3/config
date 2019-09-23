@@ -194,8 +194,8 @@ for_window [window_role="pop-up"] floating enable, move position center
 
 for_window [class="^.*"] border pixel 0
 
-gaps inner 20
-gaps outer 20
+gaps inner 15
+gaps outer 5
 
 smart_gaps on
 hide_edge_borders smart
