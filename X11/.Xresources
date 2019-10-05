@@ -57,7 +57,6 @@
 
 URxvt.intensityStyles: false
 !!URxvt.perl-ext-common: vtwheel
-URxvt.perl-ext-common: unichr,resize-font
 
 !! Transparency (0-255):
 !!*.alpha: 230
@@ -78,6 +77,7 @@ URxvt.perl-ext-common: unichr,resize-font
 URxvt*boldFont:
 emacs.font:Monospace 12
 
+URxvt.perl-ext-common: default,matcher,unichr,resize-font,tabbedex
 URxvt.letterSpace: 0
 URxvt.lineSpace:0
 
@@ -86,6 +86,17 @@ URxvt.keysym.C-Up:	resize-font:bigger
 URxvt.keysym.C-Down:	resize-font:smaller
 URxvt.keysym.C-equal:	resize-font:reset
 URxvt.keysym.C-slash: 	resize-font:show
+
+URxvt.url-launcher: dwb
+URxvt.matcher.button: 1
+URxvt.colorUL: #4682B4
+URxvt.tabbed.tabbar-fg: 2
+URxvt.tabbed.tabbar-bg: 0
+URxvt.tabbed.tab-fg: 2
+URxvt.tabbed.tab-bg: 0
+URxvt.tabbed.autohide: yes
+URxvt.tabbed.new-button: no
+URxvt.tabbed.title: no
 
 rofi.terminal:  urxvt
 rofi.ssh-client:  ssh
