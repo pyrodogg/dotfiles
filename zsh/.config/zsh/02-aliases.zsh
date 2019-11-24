@@ -35,6 +35,12 @@ figcat()
   figlet $1 | lolcat
 }
 
+neobonsai()
+{
+   bonsai -n -L 20 -g 35,20 > ~/.cache/neofetch_bonsai.txt
+   neofetch --ascii ~/.cache/neofetch_bonsai.txt --ascii_colors 11 3 10 2 0
+}
+
 wttr()
 {
     # change Paris to your default location
