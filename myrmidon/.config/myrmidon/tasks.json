@@ -40,6 +40,10 @@
   },
   {
     "name": "Layout Manager",
-    "command": "layout_manager.sh"
+    "command": "/bin/bash layout_manager.sh"
+  },
+  {
+    "name": "Toggle Redshift",
+    "command": "pkill -USR1 redshift"
   }
 ]
