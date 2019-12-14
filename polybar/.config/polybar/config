@@ -128,7 +128,7 @@ font-4 = DejaVu Sans:pixelsize=10;
 
 modules-left = i3 isrunning-compton
 modules-center = xwindow
-modules-right = wttr pulseaudio memory cpu battery temperature date powermenu
+modules-right = vpn-nordvpn-status wttr pulseaudio memory cpu battery temperature date powermenu
 
 tray-position = right
 tray-padding = 2
@@ -158,6 +158,11 @@ cursor-scroll = default
 ;ns-resize
 
 enable-ipc = true
+
+[module/vpn-nordvpn-status]
+type = custom/script
+exec = ~/.config/polybar/vpn-nordvpn-status.sh
+interval = 5
 
 [module/wttr]
 type = custom/script
