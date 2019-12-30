@@ -4,14 +4,12 @@
 CONNECTION=$(nmcli -f name,device connection show | grep wlp2s0 | cut -d ' ' -f1)
 STATUS=$(nordvpn status | grep Status | tr -d ' ' | cut -d ':' -f2)
 
-if [ "$CONNECTION" = "${HOME_WIFI}" ]; then
-   echo ""
-
+if [ "$STATUS" = "Connected" ]; then
+    echo "%{F#82E0AA}%{A1:nordvpn d:}$(nordvpn status | grep City | cut -d ':' -f2)%{A}%{F-}"
 else
-
-  if [ "$STATUS" = "Connected" ]; then
-      echo "%{F#82E0AA}%{A1:nordvpn d:}$(nordvpn status | grep City | cut -d ':' -f2)%{A}%{F-}"
-  else
-      echo "%{F#f00}%{A1:nordvpn c:}no vpn%{A}%{F-}"
-  fi
+    if [ "$CONNECTION" = "${HOME_WIFI}" ]; then
+        echo ""
+    else
+        echo "%{F#f00}%{A1:nordvpn c:}no vpn%{A}%{F-}"
+    fi
 fi
