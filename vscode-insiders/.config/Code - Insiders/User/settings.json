@@ -2,7 +2,7 @@
 
   "window.zoomLevel": 0,
   "bracketPairColorizer.showBracketsInGutter": true,
-  "todohighlight.isEnable": true,
+  "todohighlight.isEnable": false,
   "gitlens.advanced.messages": {
     "suppressShowKeyBindingsNotice": true
   },
@@ -75,5 +75,12 @@
     }
   ],
   "editor.renderWhitespace": "none",
-  "editor.renderControlCharacters": false
+  "editor.renderControlCharacters": false,
+  "workbench.colorTheme": "Solarized Dark",
+  "sync.forceUpload": true,
+  "rust-client.enableMultiProjectSetup": true,
+  "explorer.confirmDragAndDrop": false,
+  "editor.lineNumbers": "interval",
+  "editor.semanticHighlighting.enabled": true,
+  "dashboard.projectData": null
 }
