@@ -8,9 +8,14 @@ while pgrep -u $UID -x polybar >/dev/null; do sleep 1; done
 
 source ~/.zshrc.secrets
 
-# Launch bar1 and bar2
-#polybar dummy &
-polybar -r topbar &
-#polybar bar2 &
+# https://github.com/polybar/polybar/issues/763
+if type "xrandr">/dev/null; then
+  for m in $(polybar --list-monitors | cut -d":" -f1); do
+    # Launch topbar
+    MONITOR=$m polybar -r topbar &
+  done
+else
+  polybar -r topbar &
+fi
 
 echo "Bars launched..."
