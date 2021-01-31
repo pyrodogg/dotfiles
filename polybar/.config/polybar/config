@@ -173,7 +173,8 @@ exec = curl -s http://wttr.in/?format=%c%20%t%20%w
 label = %{T5}%output%
 #format-background = ${colors.secondary}
 format-underline = #666
-click-left = notify-send Weather test
+click-left = notify-send "Weather" "$(curl -s "http://wttr.in/?format=%l\n\n%c%20%C\n%t%20(fl%20%f)\n%p\n\n%w%20%P\n-----\n%S%20-%20%s\n")"
+
 
 ; Seconds to sleep between updates
 ; 5 minutes
