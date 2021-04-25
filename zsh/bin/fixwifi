@@ -1,0 +1,76 @@
+#!/usr/bin/zsh
+# Drop hope wifi and reconnect
+
+# 1. Disconnect from current network
+# 2. Get trusted network name
+# 3. Attempt connection
+# 4. If success, exit 0 if failure try next network
+# 5. If no networks are found, return -1 ERR_NO_NETWORK
+# 6. If networks exist but all connections fail, return -2 ERR_CONNECTION
+
+# Get current network connection
+currCon () {
+  echo $(wicd-cli -yi | grep "Connected to" | cut -d ' ' -f 3)
+}
+
+# Get connection status
+conStat () {
+  echo $(wicd-cli -yi | grep "Connection status" | cut -d ' ' -f 3,4)
+}
+
+# Get the numerical network ID from name
+netID () {
+  echo $(wicd-cli -yl | grep ${1} | cut -f 1 | head -n 1)
+}
+
+testPing() {
+  ping -c2 google.com 2>&1 > /dev/null
+  #echo $?
+  if [ $? != 0 ]
+  then
+    return -1
+  else
+    return 0
+  fi
+}
+
+if [ -n "$(currCon)" ]; then
+  notify-send "Fixing wifi..." "Disconnecting from $(currCon)" -t 2000
+  wicd-cli -yx >/dev/null 2>&1
+  sleep 2
+fi
+
+# Attempt connection for each trusted network
+any_network_found=false
+any_network_connected=false
+for net_name in ${(z)TRUSTED_WIFI}; do
+  net_id=$(netID $net_name)
+  if [ -n "$net_id" ]; then
+    any_network_found=true
+    notify-send "Fixing wifi..." "Connecting to $net_name" -t 4000
+    wicd-cli -ycn "$net_id" >/dev/null 2>&1
+    # Test connection
+    if ($(testPing)); then
+      any_network_connected=true
+      break
+    else
+      # Netowrk found, but connection failed
+    fi
+  else
+    # Network not found
+    #notify-send "Fixing wifi..." "Network not found $net_name!"
+  fi
+done
+
+if ($any_network_connected); then
+  notify-send "Fixing wifi..." "Connected to $(currCon)" -t 3000
+  return 0
+else
+  if ($any_network_found); then
+    notify-send "Fixing wifi..." "Networks found but all connections failed" -t 3000
+    return 2
+  else
+    notify-send "Fixing wifi..." "No trusted networks found"
+    return 1
+  fi
+fi

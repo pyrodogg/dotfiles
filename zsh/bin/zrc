@@ -40,10 +40,8 @@ if [[ -z "${segment}" ]]; then
 fi
 
 if [[ $segment == "up" ]]; then
-  source ${HOME}/.zshrc
-  # Throws erros where manually calling same code in shell does not.
-  echo 'zrc config updated'
-  exit 0
+  echo "Use reload"
+  return 0
 fi
 
 # Find config file matching segment name
