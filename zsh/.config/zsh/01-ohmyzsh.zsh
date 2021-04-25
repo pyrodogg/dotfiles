@@ -5,7 +5,7 @@ POWERLEVEL9K_MODE='nerdfont-complete'
 #ZSH_THEME="powerlevel9k/powerlevel9k"
 ZSH_THEME="powerlevel10k/powerlevel10k"
 
-POWERLEVEL9K_LEFT_PROMPT_ELEMENTS=(context dir vcs)
+POWERLEVEL9K_LEFT_PROMPT_ELEMENTS=(context dir vcs virtualenv)
 POWERLEVEL9K_RIGHT_PROMPT_ELEMENTS=(status history time)
 #POWERLEVEL9K_HISTORY_BACKGROUND='240'
 
@@ -16,7 +16,7 @@ fi
 
 POWERLEVEL9K_TIME_ICON=
 
-DEFAULT_USER="skyler"
+DEFAULT_USER="${USER}"
 
 # Uncomment the following line to use case-sensitive completion.
 # CASE_SENSITIVE="true"
@@ -60,8 +60,8 @@ DEFAULT_USER="skyler"
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-source $ZSH/oh-my-zsh.sh
 fpath=("$HOME/.config/zsh/completions" $fpath)
-plugins=(git sublime zsh-completions)
+plugins=(git sublime nvm zsh-completions conda-zsh-completion zsh-yarn-completions)
+source $ZSH/oh-my-zsh.sh
 autoload -U compinit && compinit
 
