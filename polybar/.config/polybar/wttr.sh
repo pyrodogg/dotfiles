@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/bin/zsh
 
 #simple=`curl -s http://wttr.in/?format=1`
 #detail=`curl -s http://wttr.in/?format=2`
@@ -23,7 +23,7 @@ if [[ -z "${cache_file}" ]] || ([ ! -f $cache_file ] && [ ! -r $cache_file ]); t
   query=true
 else
   # Cache file exists and is readable
-
+  query=false
 fi
 
 if ! $query; then 
