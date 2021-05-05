@@ -231,3 +231,5 @@ exec_always --no-startup-id "urxvtd -q -o -f"
 #exec_always --no-startup-id "setxkbmap -layout 'us,us' -variant ',altgr-intl' -option 'grp:alt_shit_toggle'"
 # Set keyboard layout
 exec_always --no-startup-id "setxkbmap -layout 'us' -variant 'altgr-intl'"
+
+exec --no-startup-id pulseeffects --gapplication-service
