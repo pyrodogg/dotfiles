@@ -10,7 +10,8 @@ opacity-rule = [
     "85:class_g = 'Rofi'",
     "0:_NET_WM_STATE@[0]:32a *= '_NET_WM_STATE_HIDDEN'",
     "99:class_g = 'feh'",
-    "99:class_g = 'Darktable'"
+    "99:class_g = 'Darktable'",
+    "92:class_g = 'Code - Insiders'"
 ];
 
 focus-exclude = [
