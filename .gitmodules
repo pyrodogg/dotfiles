@@ -58,3 +58,6 @@
 [submodule "urxvt/.urxvt/ext/tabbedex-urxvt"]
 	path = urxvt/.urxvt/ext/tabbedex-urxvt
 	url = https://github.com/shaggytwodope/tabbedex-urxvt.git
+[submodule "vim/.vim/bundle/coc.nvim"]
+	path = vim/.vim/bundle/coc.nvim
+	url = https://github.com/neoclide/coc.nvim
