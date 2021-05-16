@@ -1,13 +1,9 @@
 {
-
-  "window.zoomLevel": 0,
   "bracketPairColorizer.showBracketsInGutter": true,
   "todohighlight.isEnable": false,
   "gitlens.advanced.messages": {
     "suppressShowKeyBindingsNotice": true
   },
-  "gitlens.codeLens.enabled": false,
-  "gitlens.currentLine.enabled": false,
   "gitlens.hovers.currentLine.over": "line",
   "sync.gist": "eb9ac84849dacff3985a55a715554043",
   "editor.fontFamily": "'Fira Code', 'Droid Sans Mono', 'monospace', monospace, 'Droid Sans Fallback'",
@@ -78,9 +74,18 @@
   "editor.renderControlCharacters": false,
   "workbench.colorTheme": "Solarized Dark",
   "sync.forceUpload": true,
-  "rust-client.enableMultiProjectSetup": true,
+  "rust-client.enableMultiProjectSetup": null,
   "explorer.confirmDragAndDrop": false,
   "editor.lineNumbers": "interval",
   "editor.semanticHighlighting.enabled": true,
-  "dashboard.projectData": null
+  "dashboard.projectData": null,
+  "python.insidersChannel": "weekly",
+  "extensions.ignoreRecommendations": false,
+  "python.linting.pylintPath": ".venv/bin/pylint",
+  "breadcrumbs.enabled": true,
+  "typescript.updateImportsOnFileMove.enabled": "always",
+  "gitlens.currentLine.enabled": false,
+  "gitlens.codeLens.enabled": false,
+  "tabnine.experimentalAutoImports": true,
+  "javascript.updateImportsOnFileMove.enabled": "never"
 }
