@@ -158,10 +158,13 @@ mode "resize" {
         # back to normal: Enter or Escape
         bindsym Return mode "default"
         bindsym Escape mode "default"
-	bindsym $mod+r mode "default"
+        bindsym $mod+r mode "default"
 }
 
 bindsym $mod+r mode "resize"
+
+bindsym $mod+Shift+w exec --no-startup-id "zsh -c fixwifi"
+#bindsym $mod+Shift+w exec --no-startup-id "zsh -c 'notify-send $BUTTS'"
 
 # Myrmidon
 bindsym $mod+p exec --no-startup-id "myrmidon.sh ~/.config/myrmidon/tasks.json"
@@ -214,8 +217,8 @@ exec --no-startup-id libinput-gestures &
 exec --no-startup-id wicd-client --tray
 
 # https://unsplash.com/photos/h4xoZAs5XyM
-#exec feh --bg-fill ~/Pictures/wallpaper/aliaksei-lepik-1224087-unsplash.jpg 
-#exec feh --bg-fill ~/Pictures/wallpaper/_MG_0158.jpg 
+#exec feh --bg-fill ~/Pictures/wallpaper/aliaksei-lepik-1224087-unsplash.jpg
+#exec feh --bg-fill ~/Pictures/wallpaper/_MG_0158.jpg
 exec_always ~/.fehbg &
 
 #exec compton --no-fading-openclose --config ~/.config/compton.conf -b --logpath /tmp/compton
