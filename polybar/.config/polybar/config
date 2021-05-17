@@ -56,7 +56,7 @@ module-margin-right = 2
 
 font-0 = fixed:pixelsize=10;1
 font-1 = unifont:fontformat=truetype:size=8:antialias=false;0
-font-2 = siji:pixelsize=10;1
+font-2 = Siji:pixelsize=10;1
 
 modules-left = bspwm i3
 modules-center = xwindow 
@@ -124,8 +124,9 @@ module-margin-right = 0
 font-0 = "SauceCodePro Nerd Font:style=Regular:size=11:antialias=true:minspace=False"
 font-1 = fixed:pixelsize=11;1
 font-2 = unifont:fontformat=truetype:size=11:antialias=false;0
-font-3 = siji:pixelsize=12;1
-font-4 = DejaVu Sans:pixelsize=10;
+font-3 = Siji:pixelsize=10;1
+font-4 = DejaVu Sans Mono:pixelsize=10;
+font-5 = Symbola;0
 
 modules-left = i3 isrunning-compton
 modules-center = xwindow
@@ -170,7 +171,7 @@ type = custom/script
 
 exec = curl -s http://wttr.in/?format=%c%20%t%20%w
 ;exec = cat ~/.config/polybar/temp.detail
-label = %{T5}%output%
+label = %{T-}%output%
 #format-background = ${colors.secondary}
 format-underline = #666
 click-left = notify-send "Weather" "$(curl -s "http://wttr.in/?format=%l\n\n%c%20%C\n%t%20(fl%20%f)\n%p\n\n%w%20%P\n-----\n%S%20-%20%s\n")"
