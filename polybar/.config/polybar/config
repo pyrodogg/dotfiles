@@ -165,7 +165,7 @@ enable-ipc = true
 [module/vpn-nordvpn-status]
 type = custom/script
 exec = ~/.config/polybar/vpn-nordvpn-status.sh
-interval = 5
+interval = 10
 
 [module/wttr]
 type = custom/script
