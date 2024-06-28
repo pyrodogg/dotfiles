@@ -41,8 +41,8 @@ bindsym $mod+Shift+Return exec urxvt -e ranger
 bindsym $mod+Shift+q kill
 
 # start rofi (a program launcher)
-bindsym $mod+d exec --no-startup-id "rofi -modi drun,window,ssh -theme solarized -show drun"
-bindsym $alt+Tab exec --no-startup-id "rofi -modi window -theme solarized -show window"
+bindsym $mod+d exec --no-startup-id "rofi -modi drun#window#ssh -show drun -kb-mode-next Super_L+d"
+bindsym $alt+Tab exec --no-startup-id "rofi -modi window -show window"
 # There also is the (new) i3-dmenu-desktop which only displays applications
 # shipping a .desktop file. It is a wrapper around dmenu, so you need that
 # installed.
