@@ -71,12 +71,12 @@ ranger() {
   fi
 }
 
-c() {
+cl() {
   cd $1;
   ls;
 }
 # Alias must be set after function
-alias cd="c"
+#alias cd="c"
 
 globalias() {
   if [[ $LBUFFER =~ ' [A-Z0-9]+$' ]]; then
