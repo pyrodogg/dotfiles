@@ -3,11 +3,16 @@
 
 #CONNECTION=$(nmcli -f name,device connection show | grep wlp2s0 | cut -d ' ' -f1)
 KNOWNWIFI="$HOME/.knownwifi"
+CONNSTAT=$(wicd-cli -yi | grep 'Not connected' | cut -d ':' -f2)
 CONNECTION=$(wicd-cli -dy | grep Essid | cut -d ' ' -f2)
 STATUS=$(nordvpn status | grep Status | tr -d ' ' | cut -d ':' -f2)
 ENCRYPT=$(wicd-cli -d --wireless | grep 'Encryption' | cut -d ' ' -f2)
 TAILSTATUS=$(tailscale status)
-TAILEXIT=$(tailscale status --peers --json | jq -r '.ExitNodeStatus.ID as $node_id | .Peer[] | select(.ID==$node_id) | .HostName')
+
+if [[ "$CONNSTAT" == " Not connected" ]]; then
+  echo ""
+  exit 0
+fi
 
 if [ "$STATUS" = "Connected" ]; then
   echo "%{F#82E0AA}%{A1:nordvpn d:}$(nordvpn status | grep City | cut -d ':' -f2)%{A}%{F-}"
@@ -16,6 +21,7 @@ else
   if [[ "${TAILSTATUS}" == "Tailscale is stopped." ]]; then
     #continue
   else
+    TAILEXIT=$(tailscale status --peers --json | jq -r '.ExitNodeStatus.ID as $node_id | .Peer[] | select(.ID==$node_id) | .HostName')
     echo "%{F#6600FF}${TAILEXIT}%{F-}"
     exit
   fi
