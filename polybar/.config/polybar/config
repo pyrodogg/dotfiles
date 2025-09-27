@@ -130,7 +130,7 @@ font-5 = Symbola;0
 
 modules-left = i3 isrunning-compton
 modules-center = xwindow
-modules-right = wlan vpn-nordvpn-status wttr pulseaudio memory cpu battery temperature date powermenu
+modules-right = wlan vpn-status wttr pulseaudio memory cpu battery temperature date powermenu
 
 tray-position = right
 tray-padding = 2
@@ -162,9 +162,9 @@ cursor-scroll = default
 
 enable-ipc = true
 
-[module/vpn-nordvpn-status]
+[module/vpn-status]
 type = custom/script
-exec = ~/.config/polybar/vpn-nordvpn-status.sh
+exec = ~/.config/polybar/vpn-status.sh
 interval = 10
 
 [module/wttr]
