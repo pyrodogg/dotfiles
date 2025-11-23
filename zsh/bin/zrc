@@ -2,11 +2,9 @@
 # Helper script for editing split .zshrc configuration
 # Synctax: `zrc alias` open alias.zshrc file
 
-
 function print_usage {
   echo "Usage: zrc [-h] [up | segment_alias]"
   exit 0
-
 }
 
 if [[ -z "${XDG_CONFIG_HOME}" ]]; then
@@ -56,6 +54,5 @@ if [[ -z "${config}" ]]; then
 fi
 
 ${EDITOR} ${config}
-
-
+kill -USR1 ${PPID} #reset zsh
 
